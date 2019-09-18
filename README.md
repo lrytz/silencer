@@ -1,7 +1,7 @@
 # Silencer: Scala compiler plugin for warning suppression
 
 [![Build Status](https://travis-ci.org/ghik/silencer.svg?branch=master)](https://travis-ci.org/ghik/silencer)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.ghik/silencer-plugin_2.13.0/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.ghik/silencer-plugin_2.13.0)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.ghik/silencer-plugin_2.13.1/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.ghik/silencer-plugin_2.13.1)
 
 Scala has no local warning suppression (see e.g. [scala/bug/issues/1781](https://github.com/scala/bug/issues/1781) 
 for discussion). This plugin aims to change the situation. The direct motivation for this plugin is to be able to 
@@ -23,7 +23,7 @@ If you're using Gradle:
 
 ```groovy
 ext {
-    scalaVersion = "..." // e.g. "2.13.0"
+    scalaVersion = "..." // e.g. "2.13.1"
     silencerVersion = "..." // appropriate silencer version
 }
 configurations {

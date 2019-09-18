@@ -85,10 +85,7 @@ lazy val `silencer-plugin` = project.dependsOn(`silencer-lib`)
   .settings(
     libraryDependencies ++= Seq(
       "org.scala-lang" % "scala-compiler" % scalaVersion.value,
-      if (scalaBinaryVersion.value == "2.13")
-        "org.scalatest" %% "scalatest" % "3.1.0-SNAP13" % Test
-      else
-        "org.scalatest" %% "scalatest" % "3.0.8-RC5" % Test
+      "org.scalatest" %% "scalatest" % "3.0.8" % Test,
     ),
     saveTestClasspath := {
       val result = (classDirectory in Test).value / "embeddedcp"
